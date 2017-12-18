@@ -1,6 +1,6 @@
 ![alt tag](https://s3.eu-central-1.amazonaws.com/configo.io/overview.png)
 
-# Configo iOS SDK Documentation (1.9.0)
+# Configo iOS SDK Documentation (1.9.x)
 
 ### Table of Contents
 
