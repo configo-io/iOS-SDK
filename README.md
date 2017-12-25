@@ -73,12 +73,10 @@ Adding the Configo SDK to your Xcode project.
 
     ```swift
     //Swift
-    Configo.initWithDevKey("DEV_KEY", appId: "APP_ID", callback: {
-            err in
+    Configo.initWithDevKey("DEV_KEY", appId: "APP_ID", callback: { err in
             if(err != nil) {
                 print("Failed to load data");
-            }
-            else {
+            } else {
                 print("The data was loaded successfully");
             }
     })
@@ -401,10 +399,14 @@ The possible event action types are as follows:
 Popups can be designed and deployed in runtime from the dashboard and later easily presented in the applications. Popup analytics are collected automatically and presented for each popup individually in the dashboard.
 To manually trigger a popup presentation use the following:
 ```objective-c
-[[Configo sharedInstance] presentPopup: @"popup-name"];
+[[Configo sharedInstance] presentPopupWithName: @"popup-name" callback: ^(NSString *href) {
+    //Handle callback
+}];
 ```
 
 ```swift
-Configo.sharedInstance().presentPopup(withName: "popup-name") //Swift
+Configo.sharedInstance().presentPopup(withName: "popup-name", callback: { href in
+    print("The url from the campaign or 'close'");
+}) //Swift
 ```
 
