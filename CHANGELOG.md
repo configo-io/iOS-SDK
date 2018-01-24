@@ -2,6 +2,24 @@
 All changes to the SDK will be documented in this file.
 This project follows the [Semantic Versioning](http://semver.org) style.
 
+## [1.10.1] - 2017-01-24
+### Fix
+- Edge case where data is not updated to SDK consumer
+
+## [1.10.0] - 2017-01-16
+### Rename
+- `-presentPopupWithName:callback:` to `-presentCampaignWithName:callback:`
+- block type `CFGPopupCallback` to `CFGCampaignCallback`
+
+### Fix
+- Cordova relative url open now uses `window.location = <href>`
+
+
+## [1.9.12] - 2017-12-28
+### Fix
+- View / Element data collection for better view binding
+
+
 ## [1.9.11] - 2017-12-25
 ### Fix
 - Feature disabled for UITableViewCell user interaction
