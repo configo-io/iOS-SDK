@@ -1,4 +1,4 @@
-![alt tag](https://s3.eu-central-1.amazonaws.com/configo.io/overview.png#1)
+![alt tag](https://s3.eu-central-1.amazonaws.com/configo.io/overview.png)
 
 # Configo iOS SDK Documentation (1.9.x)
 
@@ -259,16 +259,15 @@ Configo.sharedInstance().pullDataSync(withTimeout: NSTimeInterval) //Swift
 ## Dynamic Data Refresh
 The data is updated and loaded every time the app opens, to avoid inconsistency at runtime. The data will be updated at runtime in the following scenarios:
 
-1. Calling `pullData:` with a valid `callback`.
-2. Calling `setDynamicallyRefreshData:` with `YES`.
-3. Calling `forceRefreshData`.
+1. Configuring the SDK `setDynamicallyRefreshData:` with `YES`.
+2. Calling `forceRefreshData`.
 
 <a name="sdk-events"></a>
 ## SDK Events
 Configo's operational state can be retrieved using several methods:
 
 1. Callbacks
-2. Polling for state
+2. Polling the `state` property
 
 ##### Callbacks
 
