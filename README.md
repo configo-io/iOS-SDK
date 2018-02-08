@@ -1,4 +1,4 @@
-![alt tag](https://s3.eu-central-1.amazonaws.com/configo.io/overview.png)
+![alt tag](https://s3.eu-central-1.amazonaws.com/configo.io/overview.png#1)
 
 # Configo iOS SDK Documentation (1.9.x)
 
